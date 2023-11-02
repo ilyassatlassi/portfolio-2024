@@ -37,7 +37,7 @@ const About = () => {
             you like what you see and have a project you need coded, don&apos;t
             hesitate to contact me.
           </p>
-          <h3 className="text-[#7F8CFF] font-medium ">LET&aposS CONNECT</h3>
+          <h3 className="text-[#7F8CFF] font-medium ">LET&apos;S CONNECT</h3>
           <ul className="flex gap-3 lg:pb-3  pt-1 pl-2">
             <li>
               <a href="https://github.com/ilyassatlassi">
