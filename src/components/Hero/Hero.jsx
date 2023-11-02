@@ -301,16 +301,16 @@ const Hero = () => {
         <div className="flex flex-col px-6 py-28 gap-3 lg:px-64 lg:py-48">
           <div className="flex flex-col gap-3">
             <h1 className="text-[40px] font-bold text-[#172B4D]">
-              I&lsquom Ilyass <br />
+              I&apos;m Ilyass <br />
               Glad to see you!
             </h1>
             <p className="text-[16px] text-[#344563] font-normal">
-              I&lsquom a software developer! I can help you build a product , feature
+              I&apos;m a software developer! I can help you build a product , feature
               or website Look through some of my work and experience! If you
               like what you see and have a project you need coded, don’t
               hesitate to contact me.
             </p>
-            <h3 className="text-[#7F8CFF] font-medium ">LET&lsquoS CONNECT</h3>
+            <h3 className="text-[#7F8CFF] font-medium ">LET&apos;S CONNECT</h3>
             <ul className="flex text-[#505F79] gap-3">
               <li>
                 <a href="https://github.com/ilyassatlassi">

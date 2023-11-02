@@ -32,9 +32,9 @@ const About = () => {
         <div className="flex flex-col gap-3 lg:w-1/2">
           <h2 className="text-4xl font-bold">About Myself</h2>
           <p>
-            Hello I’m a software developer! I can help you build a product ,
+            Hello I&apos;m a software developer! I can help you build a product ,
             feature or website. Look through some of my work and experience! If
-            you like what you see and have a project you need coded, don’t
+            you like what you see and have a project you need coded, don&apos;t
             hesitate to contact me.
           </p>
           <h3 className="text-[#7F8CFF] font-medium ">LET&aposS CONNECT</h3>
