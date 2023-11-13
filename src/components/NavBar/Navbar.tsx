@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import hamburger from "../../assets/normal-button-tertiary-icons-icon-menu.svg";
 import cancel from "../../assets/normal-button-tertiary-icons-icon-cancel.svg";
+import Link from "next/link";
 
 const NavBar = () => {
   const [Nav, SetNav] = useState(false);
@@ -28,9 +29,9 @@ const NavBar = () => {
     SetNav(!Nav);
   };
   return (
-    <header>
+    <header className="">
       <div className={`${Nav ? "flex" : "hidden"}`}>
-        <div className="bg-[#6070FF] h-screen w-full mix-blend-multiply fixed font-bold text-3xl backdrop-blur-lg text-white p-3 z-30">
+        <div className="bg-[#6070FF] h-screen w-full mix-blend-multiply fixed font-bold text-3xl backdrop-blur-2xl text-white p-3 z-30">
           <div className="inline-block">
             <button onClick={handleNav} className="p-2 absolute right-6 top-3">
               <Image src={cancel} alt="Cancel button" />
@@ -69,12 +70,15 @@ const NavBar = () => {
           }`}
       >
         <div className=" bg-white flex items-center justify-between pr-6 pl-3 py-1 lg:px-36 lg:py-4 ">
-          <div className="text-center  text-indigo-500 text-lg font-bold leading-tight py-[10px] px-3  ">
+          <Link href={'/'}>
+            <div className="text-center cursor-pointer  text-indigo-500 text-lg font-bold leading-tight py-[10px] px-3  ">
             My Logo
           </div>
+          </Link>
+          
           <nav className="hidden md:flex">
             <ul className="flex items-center gap-[10px] font-poppins font-medium text-base">
-              <li className="px-3 py-4 transition delay-700 duration-700 ease-in-out transform hover:gg">
+              <li className="px-3 py-4 transition delay-700 duration-700 ease-in-out transform hover:scale-105">
                 <a className="text-[#344563]" href="#project">
                   Portfolio
                 </a>
