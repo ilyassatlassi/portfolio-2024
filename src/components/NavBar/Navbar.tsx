@@ -11,7 +11,7 @@ const NavBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
+      if (window.scrollY > 100) {
         setShowHeader(false);
       } else {
         setShowHeader(true);
@@ -30,14 +30,15 @@ const NavBar = () => {
   };
   return (
     <header className="">
-      <div className={`${Nav ? "flex" : "hidden"}`}>
-        <div className="bg-[#6070FF] h-screen w-full mix-blend-multiply fixed font-bold text-3xl backdrop-blur-2xl text-white p-3 z-30">
-          <div className="inline-block">
-            <button onClick={handleNav} className="p-2 absolute right-6 top-3">
+      
+      <div className={`${Nav ? "flex fixed bottom-0 top-0 z-30 w-screen bg-[#6070FF]  mix-blend-multiply  font-bold text-3xl backdrop-blur-2xl text-white p-3" : "hidden"}`}>
+        <div className=" ">
+          <div className="inline-block ">
+            <button onClick={handleNav} className="p-2 fixed right-6 top-3">
               <Image src={cancel} alt="Cancel button" />
             </button>
           </div>
-          <nav>
+          <nav> 
             <ul className="flex flex-col pt-2 gap-2">
               <li className="p-4">
                 <a
@@ -66,7 +67,7 @@ const NavBar = () => {
         </div>
       </div>
       <div
-        className={` h-16 fixed opacity-100  lg:hover:opacity-100 transition-opacity ease-in-out duration-300 inline-block w-full  z-20 lg:shadow-2xl ${showHeader ? "" : "lg:opacity-0"
+        className={` h-16 fixed opacity-100  lg:hover:opacity-100 lg:transition-opacity lg:ease-in-out duration-300 inline-block w-full  z-20 shadow-sm lg:shadow-2xl ${showHeader ? "" : "lg:opacity-0"
           }`}
       >
         <div className=" bg-white flex items-center justify-between pr-6 pl-3 py-1 lg:px-36 lg:py-4 ">

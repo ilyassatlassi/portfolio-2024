@@ -68,7 +68,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[20px] right-[-12.79px]"
+            className="absolute top-[20px] right-0"
             width="81"
             height="67"
             viewBox="0 0 81 67"
