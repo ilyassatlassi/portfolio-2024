@@ -1,12 +1,12 @@
-"use client";
+
 import React from "react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <section id="hero" className="relative top-16 lg:bg-[#CFD8DC]">
-      <div className="w-full min-h-screen lg:min-h-screen bg-white lg:rounded-bl-[124px]">
+    <section id="hero" className="relative lg:min-h-full min-h-[90dvh] top-0 lg:bg-[#CFD8DC]">
+      <div className="w-full  bg-white lg:rounded-bl-[124px]">
         {/* Background div for mobile screens */}
         <div className=" lg:hidden ">
           <svg

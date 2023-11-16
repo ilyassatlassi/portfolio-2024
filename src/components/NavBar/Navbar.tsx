@@ -28,14 +28,15 @@ const NavBar = () => {
   const handleNav = () => {
     SetNav(!Nav);
   };
+  
   return (
-    <header className="">
+    <header className={`${Nav? "static": "fixed"} bg-white top-0  py-0 px-8 w-full z-[99] shadow-sm lg:hover:shadow-2xl opacity-100 lg:hover:opacity-100 lg:transition-opacity lg:ease-in-out duration-300  ${showHeader ? "lg:shadow-2xl" : "lg:opacity-0"
+  }`}>
       
-      <div className={`${Nav ? "flex fixed bottom-0 top-0 z-30 w-screen bg-[#6070FF]  mix-blend-multiply  font-bold text-3xl backdrop-blur-2xl text-white p-3" : "hidden"}`}>
-        <div className=" ">
+      <div className={`${Nav ? "flex fixed left-0 right-0 bottom-0 top-0 z-30 w-screen  bg-[#6070FF]  mix-blend-multiply  font-bold text-3xl backdrop-blur-2xl text-white p-3" : "hidden"}`}>
           <div className="inline-block ">
             <button onClick={handleNav} className="p-2 fixed right-6 top-3">
-              <Image src={cancel} alt="Cancel button" />
+              <Image priority={true} src={cancel} alt="Cancel button" />
             </button>
           </div>
           <nav> 
@@ -64,42 +65,34 @@ const NavBar = () => {
               </li>
             </ul>
           </nav>
-        </div>
       </div>
-      <div
-        className={` h-16 fixed opacity-100  lg:hover:opacity-100 lg:transition-opacity lg:ease-in-out duration-300 inline-block w-full  z-20 shadow-sm lg:shadow-2xl ${showHeader ? "" : "lg:opacity-0"
-          }`}
-      >
-        <div className=" bg-white flex items-center justify-between pr-6 pl-3 py-1 lg:px-36 lg:py-4 ">
-          <Link href={'/'}>
-            <div className="text-center cursor-pointer  text-indigo-500 text-lg font-bold leading-tight py-[10px] px-3  ">
+      <div className={`max-w-[1200px] min-h-[4rem] mx-auto my-0 flex items-center justify-between `}>
+          <Link href={'/'} className="text-center cursor-pointer  text-indigo-500 text-lg font-bold leading-tight">
             My Logo
-          </div>
           </Link>
           
-          <nav className="hidden md:flex">
-            <ul className="flex items-center gap-[10px] font-poppins font-medium text-base">
-              <li className="px-3 py-4 transition delay-700 duration-700 ease-in-out transform hover:scale-105">
+          <nav className="hidden lg:flex">
+            <ul className="flex gap-4 font-medium text-base">
+              <li className=" transition duration-300 ease-in-out transform hover:scale-105">
                 <a className="text-[#344563]" href="#project">
                   Portfolio
                 </a>
               </li>
-              <li className="px-3 py-4 transition delay-700 duration-700 ease-in-out transform hover:scale-105">
+              <li className="transition duration-300 ease-in-out transform hover:scale-105">
                 <a className="text-[#344563]" href="#About">
                   About
                 </a>
               </li>
-              <li className="px-3 py-4 transition delay-700 duration-700 ease-in-out transform hover:scale-105">
+              <li className="transition duration-300 ease-in-out transform hover:scale-105">
                 <a className="text-[#344563]" href="#Contact">
                   Contact
                 </a>
               </li>
             </ul>
           </nav>
-          <button onClick={handleNav} className="md:hidden">
-            <Image src={hamburger} alt="Hamburger button" />
+          <button onClick={handleNav} className="lg:hidden">
+            <Image priority={true} src={hamburger} alt="Hamburger button" />
           </button>
-        </div>
       </div>
     </header>
   );
