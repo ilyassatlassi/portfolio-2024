@@ -4,9 +4,11 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 
 const Hero = () => {
+  const socialAnimation = "transition delay-300 duration-300 hover:scale-110 hover:-translate-y-1"
+
+
   return (
-    <section id="hero" className="relative lg:min-h-full min-h-[90dvh] top-0 lg:bg-[#CFD8DC]">
-      <div className="w-full  bg-white lg:rounded-bl-[124px]">
+    <section id="hero" className="relative bg-white h-[90dvh] top-0 lg:rounded-bl-[124px] px-6 p-0 ">
         {/* Background div for mobile screens */}
         <div className=" lg:hidden ">
           <svg
@@ -298,13 +300,12 @@ const Hero = () => {
         </div>
 
         {/* Content of the hero section */}
-        <div className="flex flex-col px-6 py-28 gap-3 lg:px-64 lg:py-48">
-          <div className="flex flex-col gap-3">
+        <div className="flex flex-col min-h-[37.75rem] max-w-[57.5rem] justify-center mx-auto my-0 gap-3">
             <h1 className="text-[40px] font-bold text-[#172B4D]">
               I&apos;m Ilyass <br />
               Glad to see you!
             </h1>
-            <p className="text-[16px] text-[#344563] font-normal">
+            <p className="text-[16px] text-[#344563] text-justify font-normal">
               I&apos;m a software developer! I can help you build a product , feature
               or website Look through some of my work and experience! If you
               like what you see and have a project you need coded, don’t
@@ -312,30 +313,28 @@ const Hero = () => {
             </p>
             <h3 className="text-[#7F8CFF] font-medium ">LET&apos;S CONNECT</h3>
             <ul className="flex text-[#505F79] gap-3">
-              <li>
-                <a href="https://github.com/ilyassatlassi">
+              <li className={socialAnimation}>
+                <a href="https://github.com/ilyassatlassi" aria-label="Read more">
                   <FaGithub size={32} />
                 </a>
               </li>
-              <li>
-                <a href="https://www.linkedin.com/in/ilyassatlassi/">
+              <li className={socialAnimation}>
+                <a href="https://www.linkedin.com/in/ilyassatlassi/" aria-label="Read more">
                   <FaLinkedin size={32} />
                 </a>
               </li>
-              <li>
-                <a href="https://twitter.com/ilyass_atlassi">
+              <li className={socialAnimation}>
+                <a href="https://twitter.com/ilyass_atlassi" aria-label="Read more">
                   <FaTwitter size={32} />
                 </a>
               </li>
-              <li>
-                <a href="mailto:atlassiilyass@gmail.com">
+              <li className={socialAnimation}>
+                <a href="mailto:atlassiilyass@gmail.com" aria-label="Read more">
                   <AiOutlineMail size={32} />
                 </a>
               </li>
             </ul>
-          </div>
         </div>
-      </div>
     </section>
   );
 };

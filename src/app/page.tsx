@@ -8,13 +8,13 @@ import Project from '@/components/Projects'
 
 const page = () => {
   return (
-    <>
+    <main>
       <NavBar />
       <Hero />
       <Project />
       <About />
       <Contact />
-    </>
+    </main>
   );
 };
 

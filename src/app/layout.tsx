@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className } mt-16`}>{children}
+      <body className={`${poppins.className } mt-16 bg-[#CFD8DC]`}>{children}
         <Toaster position='bottom-left'/>
       </body>
     </html>
