@@ -35,7 +35,7 @@ const NavBar = () => {
     <header className={`${Nav ? "static" : "fixed"} bg-white top-0  py-0 px-6 w-full z-[99] shadow-sm lg:hover:shadow-2xl opacity-100 lg:hover:opacity-100 lg:transition-opacity lg:ease-in-out duration-300  ${showHeader ? "lg:shadow-2xl" : "lg:opacity-0"
       }`}>
 
-      <div className={`${Nav ? "flex fixed left-0 right-0 bottom-0 top-0 z-30 w-screen  bg-[#6070FF]  mix-blend-multiply  font-bold text-3xl backdrop-blur-2xl text-white p-3" : "hidden"}`}>
+      <div className={`${Nav ? "flex fixed inset-0 z-30 w-screen  bg-[#6070FF]  mix-blend-multiply  font-bold text-3xl backdrop-blur-2xl text-white p-3" : "hidden"}`}>
         <div className="inline-block ">
           <button onClick={handleNav} className="p-2 fixed right-6 top-3">
             <Image priority={true} src={cancel} alt="Cancel button" />

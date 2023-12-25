@@ -8,7 +8,7 @@ const Hero = () => {
 
 
   return (
-    <section id="hero" className="relative bg-white h-[90dvh] top-0 lg:rounded-bl-[124px] px-6 p-0 ">
+    <section id="hero" className="relative bg-white min-h-[90dvh] top-0  lg:rounded-bl-[124px] px-6 p-0 ">
         {/* Background div for mobile screens */}
         <div className=" lg:hidden ">
           <svg
