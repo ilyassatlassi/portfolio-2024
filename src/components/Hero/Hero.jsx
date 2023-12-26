@@ -8,11 +8,11 @@ const Hero = () => {
 
 
   return (
-    <section id="hero" className="relative bg-white min-h-[90dvh] top-0  lg:rounded-bl-[124px] px-6 p-0 ">
+    <section id="hero" className="relative min-h-[90dvh] top-0  lg:rounded-bl-[124px] px-6 p-0 ">
         {/* Background div for mobile screens */}
         <div className=" lg:hidden ">
           <svg
-            className="absolute left-0 top-9"
+            className="absolute dark:hidden left-0 top-9"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="28"
@@ -25,7 +25,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[56px] left-[103.18px]"
+            className="absolute dark:hidden  top-[56px] left-[103.18px]"
             width="24"
             height="21"
             viewBox="0 0 24 21"
@@ -40,7 +40,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[63.81px] left-[101px]"
+            className="absolute dark:hidden  top-[63.81px] left-[101px]"
             xmlns="http://www.w3.org/2000/svg"
             width="11"
             height="12"
@@ -57,7 +57,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[60.24px] right-0"
+            className="absolute dark:hidden  top-[60.24px] right-0"
             xmlns="http://www.w3.org/2000/svg"
             width="52"
             height="101"
@@ -70,7 +70,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[20px] right-0"
+            className="absolute dark:hidden  top-[20px] right-0"
             width="81"
             height="67"
             viewBox="0 0 81 67"
@@ -86,7 +86,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[223px] right-[66px]"
+            className="absolute dark:hidden  top-[223px] right-[66px]"
             xmlns="http://www.w3.org/2000/svg"
             width="11"
             height="11"
@@ -96,7 +96,7 @@ const Hero = () => {
             <circle cx="5.5" cy="5.5" r="5" fill="white" stroke="#CBCDFF" />
           </svg>
           <svg
-            className="absolute bottom-[171px] right-[32.42px]"
+            className="absolute dark:hidden  bottom-[171px] right-[32.42px]"
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="13"
@@ -109,7 +109,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute bottom-[138.8px] right-[32.24px]"
+            className="absolute dark:hidden  bottom-[138.8px] right-[32.24px]"
             xmlns="http://www.w3.org/2000/svg"
             width="31"
             height="26"
@@ -122,7 +122,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute bottom-[36px] left-[53px]"
+            className="absolute dark:hidden  bottom-[36px] left-[53px]"
             xmlns="http://www.w3.org/2000/svg"
             width="15"
             height="15"
@@ -132,7 +132,7 @@ const Hero = () => {
             <circle cx="7.5" cy="7.49988" r="7" fill="white" stroke="#CBCDFF" />
           </svg>
           <svg
-            className="absolute bottom-[40.9px] right-[118px]"
+            className="absolute dark:hidden  bottom-[40.9px] right-[118px]"
             xmlns="http://www.w3.org/2000/svg"
             width="20"
             height="21"
@@ -142,7 +142,7 @@ const Hero = () => {
             <circle cx="10" cy="10.0956" r="10" fill="#6070FF" />
           </svg>
           <svg
-            className="absolute bottom-[26.85px] right-[120.68px]"
+            className="absolute dark:hidden  bottom-[26.85px] right-[120.68px]"
             width="68"
             height="39"
             viewBox="0 0 68 39"
@@ -162,7 +162,7 @@ const Hero = () => {
         {/* Background div for larger screens */}
         <div className="hidden lg:flex ">
           <svg
-            className="absolute top-[120px] right-[8px]"
+            className="absolute dark:hidden  top-[120px] right-[8px]"
             xmlns="http://www.w3.org/2000/svg"
             width="210"
             height="213"
@@ -175,7 +175,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-12 right-[93px]"
+            className="absolute dark:hidden  top-12 right-[93px]"
             width="201"
             height="143"
             viewBox="0 0 201 143"
@@ -191,7 +191,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[168px] right-[692px]"
+            className="absolute dark:hidden  top-[168px] right-[692px]"
             width="57"
             height="23"
             viewBox="0 0 57 23"
@@ -206,7 +206,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[186px] right-[708px]"
+            className="absolute dark:hidden  top-[186px] right-[708px]"
             xmlns="http://www.w3.org/2000/svg"
             width="23"
             height="23"
@@ -216,7 +216,7 @@ const Hero = () => {
             <circle cx="11.5" cy="11.5" r="11.5" fill="#EBEBFF" />
           </svg>
           <svg
-            className="absolute top-[121px] left-[65.18px]"
+            className="absolute dark:hidden  top-[121px] left-[65.18px]"
             xmlns="http://www.w3.org/2000/svg"
             width="78"
             height="57"
@@ -229,7 +229,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute top-[69px] left-[34px]"
+            className="absolute dark:hidden  top-[69px] left-[34px]"
             width="90"
             height="93"
             viewBox="0 0 90 93"
@@ -246,7 +246,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute bottom-[127px] left-[253.89px]"
+            className="absolute dark:hidden  bottom-[127px] left-[253.89px]"
             xmlns="http://www.w3.org/2000/svg"
             width="37"
             height="20"
@@ -259,7 +259,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="bottom-[77.39px] absolute left-[233px]"
+            className="bottom-[77.39px] absolute dark:hidden  left-[233px]"
             xmlns="http://www.w3.org/2000/svg"
             width="47"
             height="38"
@@ -272,7 +272,7 @@ const Hero = () => {
             />
           </svg>
           <svg
-            className="absolute bottom-[112px] right-[554px] "
+            className="absolute dark:hidden  bottom-[112px] right-[554px] "
             xmlns="http://www.w3.org/2000/svg"
             width="47"
             height="47"
@@ -282,7 +282,7 @@ const Hero = () => {
             <circle cx="23.5" cy="23.5" r="23.5" fill="#6070FF" />
           </svg>
           <svg
-            className="absolute bottom-[76.54px] right-[560.36px]"
+            className="absolute dark:hidden  bottom-[76.54px] right-[560.36px]"
             width="160"
             height="91"
             viewBox="0 0 160 91"

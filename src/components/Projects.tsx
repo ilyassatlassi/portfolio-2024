@@ -16,7 +16,7 @@ const Project = () => {
           PopUp ? "hidden" : ""
         }`} */}
       <div
-        className="bg-[#CFD8DC] py-28 px-6 lg:p-36 flex flex-col lg:gap-36 gap-[88px]"
+        className="py-28 px-6 lg:p-36 flex flex-col lg:gap-36 gap-[88px]"
       >
         <ProjectCard handlePopUp={handlePopUp} />
         <ProjectCard handlePopUp={handlePopUp} />
