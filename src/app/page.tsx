@@ -1,6 +1,6 @@
 
 import React from "react";
-import NavBar from "@/components/NavBar/Navbar";
+import NavBar from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import About from '@/components/About'
 import Contact from '@/components/Contact/Contact'
