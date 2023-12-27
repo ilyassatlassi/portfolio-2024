@@ -1,7 +1,7 @@
 export const links = [
     {
-      name: "Home",
-      hash: "#home",
+      name: "Hero",
+      hash: "#hero",
     },
     {
       name: "About",
