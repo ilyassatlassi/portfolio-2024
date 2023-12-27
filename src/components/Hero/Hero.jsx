@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="mb-28 max-w-5xl h-full md:flex md:flex-row-reverse text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-5xl h-full lg:flex lg:flex-row-reverse text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center md:w-full ">
         <div className="relative ">
@@ -51,7 +51,7 @@ const Hero = () => {
       </div>
    <div>
        <motion.h1
-         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl sm:text-start"
+         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl md:text-start"
          initial={{ opacity: 0, y: 100 }}
          animate={{ opacity: 1, y: 0 }}
        >
