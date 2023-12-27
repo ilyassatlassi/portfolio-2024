@@ -1,10 +1,10 @@
 
 import React from "react";
-import Hero from "@/components/Hero/Hero";
 import About from '@/components/About'
 import Contact from '@/components/Contact/Contact'
 import SectionDivider from "@/components/dividerSection";
 import Projects from "@/components/Projects";
+import Hero from "@/components/Hero/Hero";
 
 const page = () => {
   return (
