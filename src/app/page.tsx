@@ -1,17 +1,17 @@
 
 import React from "react";
-import NavBar from "@/components/NavBar/Navbar";
-import Hero from "@/components/Hero/Hero";
 import About from '@/components/About'
 import Contact from '@/components/Contact/Contact'
-import Project from '@/components/Projects'
+import SectionDivider from "@/components/dividerSection";
+import Projects from "@/components/Projects";
+import Hero from "@/components/Hero/Hero";
 
 const page = () => {
   return (
-    <main>
-      <NavBar />
+    <main className="flex flex-col items-center justify-center mx-auto sm:p-4">
       <Hero />
-      <Project />
+      <SectionDivider/>
+      <Projects />
       <About />
       <Contact />
     </main>

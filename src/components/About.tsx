@@ -26,9 +26,9 @@ const About = () => {
   return (
     <section
       id="About"
-      className="relative bg-[#CFD8DC] lg:h-[100dvh] min-h-[100dvh]"
+      className="relative b lg:h-[100dvh] min-h-[100dvh]"
     >
-      <div className="bg-white py-28 px-7 flex flex-col lg:flex-row lg:rounded-tr-[124px] lg:px-36 lg:py-40 h-full ">
+      <div className="py-28 px-7 flex flex-col lg:flex-row lg:rounded-tr-[124px] lg:px-36 lg:py-40 h-full ">
         <div className="flex flex-col gap-3 lg:w-1/2">
           <h2 className="text-4xl font-bold">About Myself</h2>
           <p>
