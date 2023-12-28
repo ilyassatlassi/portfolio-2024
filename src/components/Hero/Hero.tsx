@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import MyImage from "../../../public/images/MyImage.jpg";
+import MyImage from '../../../public/images/myimage.png';
 import Image from "next/image";
 
 const Hero = () => {
