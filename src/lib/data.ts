@@ -51,4 +51,4 @@ export const links = [
       tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
       imageUrl: wordanalyticsImg,
     },
-  ] as const;
+  ] 
