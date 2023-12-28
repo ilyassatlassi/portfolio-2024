@@ -85,7 +85,7 @@ export default function Project({
         group-hover:translate-y-3
         group-hover:-rotate-2
 
-        
+
         group-even:group-hover:translate-x-3
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2
@@ -170,7 +170,7 @@ export const ProjectDetails = ({
          outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 
          active:scale-105 transition w-1/2 "
         >
-          See Demo
+          See Source
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Button>
             
