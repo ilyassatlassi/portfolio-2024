@@ -6,10 +6,17 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import MyImage from '../../../public/images/myimage.png';
 import Image from "next/image";
+import { useActiveSectionContext } from "@/context/activeSection";
+import { useSectionInView } from "@/lib/hooks";
 
 const Hero = () => {
+  const { activeSection, setActiveSection } =
+  useActiveSectionContext();
+  const { ref } = useSectionInView("Hero", 0.5);
+  
   return (
     <section
+    ref={ref}
       id="hero"
       className="mb-28 max-w-5xl h-full lg:flex lg:flex-row-reverse text-center sm:mb-0 scroll-mt-[100rem]"
     >
@@ -73,7 +80,7 @@ const Hero = () => {
            href="#contact"
            className="group whitespace-nowrap bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
            onClick={() => {
-            //  setActiveSection("Contact");
+             setActiveSection("Contact");
             //  setTimeOfLastClick(Date.now());
            }}
          >

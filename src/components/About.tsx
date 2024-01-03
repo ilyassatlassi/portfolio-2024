@@ -15,8 +15,10 @@ import PostgreSQL from "../assets/postgresql.png"
 import SQL from "../assets/SQL.png"
 import Team from "../assets/team.png"
 import Rails from "../assets/Rails.png"
+import { useSectionInView } from "@/lib/hooks";
 
 const About = () => {
+  const { ref } = useSectionInView("About");
   const [Show, SetShow] = useState("language");
 
   const handleShow = (section: string) => {
@@ -25,6 +27,7 @@ const About = () => {
 
   return (
     <section
+    ref={ref}
       id="about"
       className="relative b lg:h-[100dvh] min-h-[100dvh]"
     >

@@ -1,9 +1,11 @@
-
+"use client"
+import { useSectionInView } from "@/lib/hooks";
 import FormContact from "./FormContact";
 
 function Contact() {
+  const { ref } = useSectionInView("Contact", 0.5);
   return (
-    <section id="contact" className="relative h-[100dvh] overflow-hidden">
+    <section ref={ref} id="contact" className="relative h-[100dvh] overflow-hidden">
       <div className="w-full relative h-full rounded-tl-[124px]">
         {/* Background div for mobile screens */}
         <div className="relative lg:hidden">
