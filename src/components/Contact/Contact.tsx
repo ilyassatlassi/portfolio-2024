@@ -3,7 +3,7 @@ import FormContact from "./FormContact";
 
 function Contact() {
   return (
-    <section id="Contact" className="relative h-[100dvh] overflow-hidden">
+    <section id="contact" className="relative h-[100dvh] overflow-hidden">
       <div className="w-full relative h-full rounded-tl-[124px]">
         {/* Background div for mobile screens */}
         <div className="relative lg:hidden">

@@ -25,7 +25,7 @@ const About = () => {
 
   return (
     <section
-      id="About"
+      id="about"
       className="relative b lg:h-[100dvh] min-h-[100dvh]"
     >
       <div className="py-28 px-7 flex flex-col lg:flex-row lg:rounded-tr-[124px] lg:px-36 lg:py-40 h-full ">
