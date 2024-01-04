@@ -1,4 +1,5 @@
-import corpcommentImg from "../../public/images/corpcomment.png";
+
+import blog from "../../public/images/blogApp.png"
 import rmtdevImg from "../../public/images/rmtdev.png";
 import wordanalyticsImg from "../../public/images/wordanalytics.png";
 
@@ -31,10 +32,10 @@ export const projectsData = [
     title: "CorpComment",
     description:
       "I created a blog app using Next.js. I used Prisma as an ORM to interact with a PostgreSQL database. I also incorporated Tanstack's React Query for performing CRUD operations, along with React Hook Form to create user-friendly post forms.",
-    tags: ["React", "Next.js", "React Query", "Tailwind", "Prisma"],
+    tags: ["React", "Next.js", "React Query", "react-forms", "Tailwind", "Prisma"],
     source: "https://github.com/ilyassatlassi/Word-Analytics",
     demo: "https://github.com/ilyassatlassi/Blog_app",
-    imageUrl: corpcommentImg,
+    imageUrl: blog,
   },
   {
     title: "rmtDev",
@@ -69,5 +70,6 @@ export const skillsData = [
   "Prisma",
   "Redux",
   "PostgreSQL",
+  "react-forms",
   "Framer Motion",
 ] as const;

@@ -37,10 +37,10 @@ export default function Project({
       }}
       className="group mb-3 sm:mb-8 last:mb-0"
     >
-      <section className="bg-gray-100 px-5 flex flex-col max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
+      <section className="bg-gray-100 px-5 flex flex-col max-w-[42rem] border sm:h-auto ov border-black/5 rounded-lg overflow-hidden sm:pr-8 sm:relative hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] gap-4 flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="leading-relaxed text-gray-700 dark:text-white/70">
+          <p className="leading-relaxed line-clamp-4 text-gray-700 dark:text-white/70">
             {description}
           </p>
           <ul className="flex flex-wrap gap-2 sm:mt-auto">
@@ -73,8 +73,6 @@ export default function Project({
         group-hover:-translate-x-3
         group-hover:translate-y-3
         group-hover:-rotate-2
-
-
         group-even:group-hover:translate-x-3
         group-even:group-hover:translate-y-3
         group-even:group-hover:rotate-2
@@ -90,6 +88,7 @@ export const ProjectDetails = ({
   title,
   demo,
   source,
+  description,
   imageUrl,
 }: ProjectProps) => {
   return (
@@ -106,10 +105,15 @@ export const ProjectDetails = ({
         </Button>
       </DrawerTrigger>
       <DrawerContent className="bg-gray-50 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90">
-        <div className="mx-auto my-4 px-5 w-full max-w-sm flex flex-col gap-4">
-          <h3 className="text-2xl text-center font-semibold">{title}</h3>
+        <div className="mx-auto my-4 px-5 w-full max-w-5xl flex flex-col sm:flex-row gap-4">
+          <div>
+            <h3 className="text-2xl sm:text-start font-semibold">{title}</h3>
+            <p className="leading-relaxed sm:mt-3 text-gray-700 dark:text-white/70">
+              {description}
+            </p>
+            <Image alt="image project" className="sm:h-96 sm:mt-3 border border-black " src={imageUrl} />
+          </div>
 
-          <Image alt="image project" className="h-96 " src={imageUrl} />
           <div className="flex flex-col gap-4 items-center justify-center w-full">
             <button
               disabled={demo === undefined}
