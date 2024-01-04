@@ -4,7 +4,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import ThemeContextProvider from "@/context/themeContext";
 import ThemeSwitch from "@/components/ThemeSwitch";
-import Header from "@/components/Header/Header";
+import Header from "@/components/Header";
 import ActiveSectionProvider, {
   ActiveSectionContext,
 } from "@/context/activeSection";

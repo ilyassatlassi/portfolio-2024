@@ -2,7 +2,7 @@
 import React from "react";
 import { PrismaClient } from "@prisma/client";
 // const prisma = new PrismaClient();
-import { FormSchema } from "../../lib/typesForm";
+import { FormSchema } from "../lib/typesForm";
 import { Resend } from "resend";
 import { string, unknown } from "zod";
 import ContactFormEmail from "@/components/email-template";
@@ -52,22 +52,8 @@ export const formSubmission = async (newContact: unknown) => {
       }),
     });
   } catch (error) {
-    console.log(getErrorMessage(error))
     return {
       error: getErrorMessage(error)
     };
   }
-  //  await resend.emails.send({
-  //     from: 'Contact From <onboarding@resend.dev>',
-  //     to: senderEmail,  // Use the user's email address
-  //     subject: 'Contact Form Submission Confirmation',
-  //     text: 'Thank you for contacting us. We have received your message.',
-  //   });
-  // await prisma.contact.create({
-  //   data: {
-  //     name: result.data.name,
-  //     email: result.data.email,
-  //     message: result.data.message,
-  //   },
-  // });
 };
