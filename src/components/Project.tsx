@@ -6,27 +6,9 @@ import Image from "next/image";
 import { VscSourceControl } from "react-icons/vsc";
 import { CgMediaLive } from "react-icons/cg";
 import { motion, useScroll, useTransform } from "framer-motion";
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerDescription,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from "./ui/drawer";
+import { Drawer, DrawerContent, DrawerTrigger } from "./ui/drawer";
 import { Button } from "./ui/button";
 import { BsArrowRight } from "react-icons/bs";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
-import { Card, CardContent } from "./ui/card";
-import { FaGithubSquare } from "react-icons/fa";
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -34,6 +16,8 @@ export default function Project({
   title,
   description,
   tags,
+  source,
+  demo,
   imageUrl,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
@@ -73,6 +57,8 @@ export default function Project({
             description={description}
             title={title}
             tags={tags}
+            source={source}
+            demo={demo}
             imageUrl={imageUrl}
           />
         </div>
@@ -102,8 +88,8 @@ export default function Project({
 
 export const ProjectDetails = ({
   title,
-  description,
-  tags,
+  demo,
+  source,
   imageUrl,
 }: ProjectProps) => {
   return (
@@ -119,32 +105,45 @@ export const ProjectDetails = ({
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Button>
       </DrawerTrigger>
-      <DrawerContent className="bg-gray-50 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90" >
-      <div className="mx-auto my-4 px-5 w-full max-w-sm flex flex-col gap-4">
-      <h3 className="text-2xl text-center font-semibold">{title}</h3>
+      <DrawerContent className="bg-gray-50 text-gray-950 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90">
+        <div className="mx-auto my-4 px-5 w-full max-w-sm flex flex-col gap-4">
+          <h3 className="text-2xl text-center font-semibold">{title}</h3>
 
-      <Image alt="image project" className="h-96 " src={imageUrl}/>
+          <Image alt="image project" className="h-96 " src={imageUrl} />
           <div className="flex flex-col gap-4 items-center justify-center w-full">
-          <Button
-          className="group whitespace-nowrap bg-gray-900
-         text-white  py-3 flex items-center gap-2 rounded-full 
-         outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 
-         active:scale-105 transition w-1/2 dark:bg-white/30 "
-        >
-          See Demo
-          <CgMediaLive className="opacity-70 group-hover:translate-x-1 transition" />
-        </Button>
-        <Button
-          className="group whitespace-nowrap bg-black/[0.7]
-         text-white py-3 flex items-center gap-2 rounded-full 
-         outline-none focus:scale-110 hover:scale-110 hover:bg-gray-9 
-         active:scale-105 transition w-1/2 dark:bg-white/10 "
-        >
-          See Source
-          <VscSourceControl className="opacity-70 group-hover:translate-x-1 transition" />
-        </Button>
+            <button
+              disabled={demo === undefined}
+              className={`bg-gray-900 p-4 text-white   rounded-full 
+               focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:bg-white/30 
+                dark:text-white/60 `}
+            >
+              <a
+                href={demo}
+                target="_blank"
+                className="flex items-center gap-2"
+              >
+                {demo === undefined ? (
+                  <>No Live available</>
+                ) : (
+                  <>
+                    See Live
+                    <CgMediaLive className="opacity-70 group-hover:translate-x-1 transition" />
+                  </>
+                )}
+              </a>
+            </button>
+            <button
+              className="bg-white p-4 text-gray-700 border-black border
+                 hover:text-gray-950  rounded-full focus:scale-[1.15]
+                  hover:scale-[1.15] active:scale-105 transition cursor-pointer dark:bg-white/10 dark:text-white/60"
+            >
+              <a href={source} className="flex items-center gap-2" target="_blank">
+                See Source
+                <VscSourceControl className="opacity-70 group-hover:translate-x-1 transition" />
+              </a>
+            </button>
           </div>
-      </div>
+        </div>
       </DrawerContent>
     </Drawer>
   );

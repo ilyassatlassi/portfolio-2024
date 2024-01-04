@@ -30,8 +30,10 @@ export const projectsData = [
   {
     title: "CorpComment",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I created a blog app using Next.js. I used Prisma as an ORM to interact with a PostgreSQL database. I also incorporated Tanstack's React Query for performing CRUD operations, along with React Hook Form to create user-friendly post forms.",
+    tags: ["React", "Next.js", "React Query", "Tailwind", "Prisma"],
+    source: "https://github.com/ilyassatlassi/Word-Analytics",
+    demo: "https://github.com/ilyassatlassi/Blog_app",
     imageUrl: corpcommentImg,
   },
   {
@@ -39,13 +41,17 @@ export const projectsData = [
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    source: "https://github.com/ilyassatlassi/Word-Analytics",
+    demo: undefined,
     imageUrl: rmtdevImg,
   },
   {
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: ["React", "Next.js", "TypeScript", "Tailwind", "Framer"],
+    source: "https://github.com/ilyassatlassi/Word-Analytics",
+    demo: undefined,
     imageUrl: wordanalyticsImg,
   },
 ];
