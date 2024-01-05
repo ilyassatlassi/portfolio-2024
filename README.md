@@ -50,7 +50,7 @@ git clone https://github.com/ilyassatlassi/portfolio_setup_mobile.git
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ilyassatlassi/portfolio_setup_mobile/issues).
+Feel free to check the [issues page](https://github.com/ilyassatlassi/portfolio-2024/issues).
 
 ## Show your support
 
