@@ -43,9 +43,9 @@ git clone https://github.com/ilyassatlassi/portfolio-2024.git
 
 👤 ilyass atlassi
 
-- GitHub: [@githubhandle](https://github.com/ilyassatlass)
+- GitHub: [@githubhandle](https://github.com/ilyassatlassi)
 - Twitter: [@twitterhandle](https://twitter.com/ilyass_atlassi)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ilyassatlassi/)
+- LinkedIn [LinkedIn](https://www.linkedin.com/in/ilyassatlassi/)
 
 
 Contributions, issues, and feature requests are welcome!
@@ -64,6 +64,6 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENCE) licensed.
+This project is [MIT](.\LICENCE) licensed.
 
 _NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
